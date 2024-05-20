@@ -1,0 +1,20 @@
+﻿<Window x:Class="Serwer.ServerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TCP Server" Height="350" Width="565" Closing="Window_Closing"
+        Icon="/Images/Logo.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="IP Address:" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="IPTextBox" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,0,0,0" Width="200"/>
+        <Label Content="Port:" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="350,0,0,0"/>
+        <TextBox x:Name="PortTextBox" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="400,0,0,0" Width="50"/>
+        <Button x:Name="StartButton" Grid.Row="0" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="475,0,0,0" Width="50" Click="StartButton_Click"/>
+        <Label x:Name="StatusLabel" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox x:Name="ReceivedTextBox" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True"/>
+    </Grid>
+</Window>

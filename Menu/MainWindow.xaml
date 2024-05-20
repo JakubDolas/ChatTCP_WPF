@@ -1,0 +1,16 @@
+﻿<Window x:Class="Menu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Menu"
+        mc:Ignorable="d"
+        Title="Menu" Height="550" Width="500" Closing="Window_Closing"
+        Icon="/Images/Logo.ico">
+    <Grid>
+        <Button x:Name="ServerStartButton" Content="START SERVER" HorizontalAlignment="Center" Margin="0,84,0,0" VerticalAlignment="Top" Height="64" Width="236" FontWeight="Bold" FontSize="20" Click="ServerStartButton_Click"/>
+        <Button x:Name="NickNameLobbyButton" Content="START CHATTING" HorizontalAlignment="Center" Margin="0,185,0,0" VerticalAlignment="Top" Height="64" Width="236" FontWeight="Bold" FontSize="20" Click="NickNameLobbyButton_Click"/>
+        <Button x:Name="ShowDatabaseButton" Content="SHOW DATABASE" HorizontalAlignment="Center" Margin="0,289,0,0" VerticalAlignment="Top" Height="64" Width="236" FontWeight="Bold" FontSize="20" Click="ShowDatabaseButton_Click"/>
+        <Button x:Name="CloseAppButton" Content="CLOSE APP" HorizontalAlignment="Center" Margin="0,388,0,0" VerticalAlignment="Top" Height="64" Width="236" FontWeight="Bold" FontSize="20" Click="CloseAppButton_Click"/>
+    </Grid>
+</Window>
